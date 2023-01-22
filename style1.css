@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+}
+
+.container.product {
+    align-content: center;
+}
+
+.container.product.imgbox {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-image: linear-gradient(120deg, rgb(21, 19, 19)60%, rgba(255, 120, 2, 0.965)5%, rgb(255, 53, 2));
+}
+
+.logo {
+    margin-left: 80px;
+    height: 70px;
+    width: 140px;
+}
+
+#check {
+    display: none;
+}
+
+.img {
+    display: none;
+    float: right;
+    max-width: 60%;
+    max-height: 40%;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+nav ul {
+    margin-right: 20px;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 5px 5px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background-image: linear-gradient(120deg, rgb(21, 19, 19)60%, rgba(255, 120, 2, 0.965)10%, rgb(255, 53, 2));
+    transition: .4s ease;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    align-items: center;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/*----------------- product card --------------*/
+
+.pro {
+    text-align: left;
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    overflow: auto;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+.product {
+    background-color: #717171;
+    max-width: 280px;
+    max-height: 280px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 150px;
+    border-radius: 15px;
+}
+
+.prod-img {
+    height: 240px;
+    width: 240px;
+    border-radius: 15px;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media(max-width:859px) {
+    label.logo {
+        font-size: 35px;
+        padding-left: 30px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:680px) {
+    .img {
+        display: block;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+    a:hover,
+    a:active {
+        background-color: rgb(55, 219, 143);
+        transition: .5s ease;
+    }
+    ul {
+        float: right;
+        position: absolute;
+        width: 40%;
+        height: max-content;
+        background: #153349;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: .4s ease;
+    }
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+    a:hover,
+    a.active {
+        background: chartreuse;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    p {
+        padding-top: 120px;
+    }
+}
+
+h1 {
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+
+/* slideshow 
+
+*/
